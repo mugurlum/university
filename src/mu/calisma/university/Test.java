@@ -44,9 +44,10 @@ public class Test {
         proffessor1.coursesGiven[0] = course1;
 
 
+        student1.advisor = proffessor1;
         proffessor1.advise = new Student[10];
         proffessor1.advise[0] = student1;
-        student1.advisor = proffessor1;
+
 
         student1.coursesTaken = new Course[4];
         student1.coursesTaken[0] = course1;
@@ -56,6 +57,8 @@ public class Test {
 
 
         System.out.println(course1.code);
+        System.out.println(student1.coursesTaken[0].teacher.name);
+        System.out.println(student1.coursesTaken[0].teacher.department.head.name);
 
 
 
